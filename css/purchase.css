@@ -1,0 +1,74 @@
+body
+{
+	background:#31a3e4;
+	
+}
+
+.main
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);	
+}
+
+h2
+{
+	text-align:center;
+}
+
+select
+{
+	appearance: none; 
+	outline : none;
+	box-shadow : none;
+	background : #2c3e50;
+	border : 0 ;
+}
+
+.select 
+{
+	position : relative;
+	display:block;
+	width: 20em;
+	height: 3em;
+	background:#2c3e50;
+	overflow:hidden;
+	line-height:3;
+	
+}
+
+select
+{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0 0 0 0.5em;
+	color:#fff;
+	font-size:1em;
+	cursor:pointer;
+
+}
+.select::after
+{
+	content: '\25bc';
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	padding:0 1em;
+	background: #34495e;
+	pointer-events: none;
+
+}
+
+.select:hover::after
+{
+	color:#31a3e4;
+
+}
+.select::after
+{
+	transition: .2s all ease;
+}
+
